@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px; /* distancia do conteudo para a borda (de dentro para fora) */
+            border-radius: 10px; /* bordas arredondadas nas pontas */
+
+            min-width: 320px; /* minimo de largura, para o site se adaptar conforme for diminuindo a pagina */
+            max-width: 800px; /* maximo de largura, para o site se adapatar conforme for diminuindo a pagina */
+            margin: auto; /* para sempre ficar centralizado conforme for diminuindo a tela */
+        }
+
+        img{
+            width: 100%; /* Para o tamanho da imagem se adaptar automaticamente conforme vamos diminuindo a tela */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione similique, iste reprehenderit sunt sint possimus, amet unde quas voluptates ipsa voluptatem ipsum, ad eaque deserunt tempore culpa illum! Adipisci,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum vitae error rem velit iste illo tempore magni quasi, expedita explicabo voluptatem commodi a laudantium adipisci nihil ea tenetur labore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sequi iste alias repudiandae quidem! Vero cum consequatur quibusdam repudiandae repellendus alias ut laborum? Rem, tempora vitae impedit commodi dicta tenetur?</p>
+        <picture>
+            <source media="(max-width: 600px )" srcset="imagem/irina-blok-pq.jpg"> <!-- quando chegar em 600px de tela, entra a nova imagem --> 
+            <img src="imagem/irina-blok.jpg" alt="irina-blok"> <!-- imagem grande -->
+        </picture>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div{
+    display: inline-block; /* um do lado do outro */
+    background-color: lightgray; /*cor fundo8*/
+    border: 1px solid black; /* borda , tipo, cor */
+    text-align: center; /*texto centralizado*/
+    height: 200px; /*altura*/
+    width: 200px; /*largura*/
+   
+}
+
+div#d1:hover {
+    background-color: aqua;
+}
+
+div#d2:hover{
+    background-color: black;
+}
+
+div#d3:hover{
+    background-color: brown;
+}
+
+div#es p{
+    display: none;
+}
+
+div#es:hover p{
+    display: block;
+    color: brown;
+}

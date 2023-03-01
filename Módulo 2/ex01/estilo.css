@@ -1,0 +1,7 @@
+*{ /* configuração global da CSS */
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to top , #8F1001 , #FFA196, #DB3927, #008F44, #27DB7D);
+    background-attachment: fixed; /*Para deixar o degradê fixo*/
+}

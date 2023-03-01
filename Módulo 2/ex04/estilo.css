@@ -1,0 +1,21 @@
+main{
+    font: normal 16px arial, verdana, serif;
+    text-align: left;
+    width: 800px;
+    margin: auto;
+    border-radius: 5px; /*bordas dobrandas*/
+    box-shadow: 5px 5px 15px black; /*lado direto */ /* parte de baixo */ /*tamanho sombra */ /*cor*/
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: right;
+}
+
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
