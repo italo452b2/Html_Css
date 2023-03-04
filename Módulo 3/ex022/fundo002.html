@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos fundos</title>
+    <style>
+    
+        
+        div.quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 368px;
+            height: 400px;
+        }
+
+        div#ceu{
+            background-image: url('https://portalwp.s3.amazonaws.com/wp-content/uploads/20190826121442/c%C3%A9u.jpg'); /* link da foto. obs: caso o servidor que a foto está hospedado caia, não será possivel ver a imagem, já que a imagem é externa */
+
+            background-size: 100px 100px; /*para defenir o tamanho de fundo da imagem OBS: Ela fica fixa e não se adapta ao tamanho de tela, e se for menor que o tamanho da div, ela vai ficar se repetindo para preencher todo o espaço da div, caso a imagem seja menor que ela*/
+        }
+
+        div#Jesus{
+            background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/12/salome-tumba-jesus.jpg');  /* link da foto. obs: caso o servidor que a foto está hospedado caia, não será possivel ver a imagem, já que a imagem é externa */
+
+            background-size: 100px 100px; /*para defenir o tamanho de fundo da imagem OBS: Ela fica fixa e não se adapta ao tamanho de tela, e se for menor que o tamanho da div, ela vai ficar se repetindo para preencher todo o espaço da div, caso a imagem seja menor que ela*/
+
+            background-repeat: no-repeat; /* para a imagem não se repetir até preencher toda a div */
+        }
+
+        div#Deus{
+            background-image: url('https://1.bp.blogspot.com/-S6uM4FsoF5c/YHdTtWmYjvI/AAAAAAAA248/AZx1ZpBAJSAdY8xv9CEAgEhptvbX4MYTACLcBGAsYHQ/w1200-h675-p-k-no-nu/chamado-de-deus.jpg');
+
+            background-size: 100px 100px; /*para defenir o tamanho de fundo da imagem OBS: Ela fica fixa e não se adapta ao tamanho de tela, e se for menor que o tamanho da div, ela vai ficar se repetindo para preencher todo o espaço da div, caso a imagem seja menor que ela*/
+
+            background-repeat: repeat-x; /* para a repetição ser da esquerda para a direta, como uma linha */
+
+        }
+
+        div#Espirito{
+            background-image: url('http://img.cancaonova.com/cnimages/canais/uploads/sites/6/2009/05/formacao_por-que-desejar-o-batismo-no-espirito-santo.jpg');
+
+            background-size: 100px 100px; /*para defenir o tamanho de fundo da imagem OBS: Ela fica fixa e não se adapta ao tamanho de tela, e se for menor que o tamanho da div, ela vai ficar se repetindo para preencher todo o espaço da div, caso a imagem seja menor que ela*/
+
+            background-repeat: repeat-y; /* para a repetição ser de cima para baixo, como uma torre */
+        }
+
+        h1{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="quadrado" id="ceu">
+    <h1>exemplo 01</h1>
+
+    </div>
+    
+    <div class="quadrado" id="Jesus">
+    <h1>exemplo 02</h1>
+
+    </div>
+    
+    <div class="quadrado" id="Deus">
+    <h1>exemplo 03</h1>
+
+    </div>
+    
+    <div class="quadrado" id="Espirito">
+    <h1>exemplo 04</h1>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>
+        body{
+            background-image: url('imagens/wallpaper003.jpg'); /* uma forma de colocar imagem de fundo no site todo, usando o body */
+        }
+        div.quadrado{
+            display: inline-block; /* Para as divs ficarem uma do lado da outro, ao invés de uma em baixo da outra */
+            border: 2px solid black;
+            border-radius: 10px; /* para borda ficar arredondada */
+            background-color: lightgrey; /* cor de fundo */
+            width: 300px; /* largura */
+            height: 300px; /* altura */
+        }
+
+        div#q1{
+            background-color: red; /* uma forma simples de colocar cor em toda div*/
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, blue, white); /* uma forma de colocar cor em toda div, com degradê */
+        }
+
+        div#q3{
+            background-image: url('imagens/pattern004.png'); /* uma forma de colocar imagem de fundo em uma div */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"> <!-- criando uma div para editar com class e id-->
+        <h1>FOGO DEUS</h1>
+
+    </div>
+
+    <div class="quadrado" id="q2"> <!-- criando uma div para ediar com class e id -->
+        <h1>PAZ DE DEUS</h1>
+
+    </div>
+
+    <div class="quadrado" id="q3"> <!-- criando uma div para ediar com class e id -->
+        <h1>Vitorioso és</h1>
+
+    </div>
+    
+</body>
+</html>
