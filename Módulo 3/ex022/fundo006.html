@@ -7,15 +7,24 @@
     <title>Teste de Imagens de fundo</title>
     <style>
         body{
+            height: 100vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover; /* significa cobrir a tela inteira com a imagem, porém, ele não exibe a imagem toda, dependendo do tamanho que estiver o navegador e da uma picotadinha na imagem as vezes*/ 
+            background-attachment: fixed; /* para a imagem ficar fixada na tela, conforme for rolando para baixo */
+
+            /* Shorthand - background
+               color > image > position > repeat > [size (ainda não funciona)] > attachment  
+            */
+           
+            
         }
         main{
             text-align: justify;
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkblue;
@@ -27,6 +36,8 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat reiciendis sequi, voluptas possimus ex officia, sunt voluptatum voluptatem aliquid aliquam incidunt architecto? Sit perspiciatis adipisci odio culpa officia voluptates repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error maiores sint delectus pariatur et incidunt mollitia, atque facilis provident beatae, accusamus architecto accusantium. Perferendis doloremque ad repudiandae dolore hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi, laborum fugit quam ad deserunt inventore veniam modi sed corporis adipisci beatae in repellat quisquam? Nesciunt architecto consectetur earum aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, maiores quo veniam officia totam at. Minus impedit unde excepturi alias suscipit maxime, rem quod dicta quos sequi porro, magnam necessitatibus.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat reiciendis sequi, voluptas possimus ex officia, sunt voluptatum voluptatem aliquid aliquam incidunt architecto? Sit perspiciatis adipisci odio culpa officia voluptates repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error maiores sint delectus pariatur et incidunt mollitia, atque facilis provident beatae, accusamus architecto accusantium. Perferendis doloremque ad repudiandae dolore hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi, laborum fugit quam ad deserunt inventore veniam modi sed corporis adipisci beatae in repellat quisquam? Nesciunt architecto consectetur earum aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, maiores quo veniam officia totam at. Minus impedit unde excepturi alias suscipit maxime, rem quod dicta quos sequi porro, magnam necessitatibus.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat reiciendis sequi, voluptas possimus ex officia, sunt voluptatum voluptatem aliquid aliquam incidunt architecto? Sit perspiciatis adipisci odio culpa officia voluptates repellendus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed error maiores sint delectus pariatur et incidunt mollitia, atque facilis provident beatae, accusamus architecto accusantium. Perferendis doloremque ad repudiandae dolore hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi commodi, laborum fugit quam ad deserunt inventore veniam modi sed corporis adipisci beatae in repellat quisquam? Nesciunt architecto consectetur earum aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, maiores quo veniam officia totam at. Minus impedit unde excepturi alias suscipit maxime, rem quod dicta quos sequi porro, magnam necessitatibus.
         </p>
     </main>
