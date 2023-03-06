@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,6 +19,7 @@
 html, body{
     min-height: 100vh; /* para a altura do container ocupar 95% da tela */
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -18,29 +30,32 @@ header{
 
 header h1{
     padding-top: 50px;
-    font-variant: small-caps;
+    font-variant: small-caps; /* Para as letras ficarem maiúsculas, porém a primeiro sempre será maior */
+    font-family: var(--fonte2);
+    
 }
 
 header p {
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
     font-size: 20px;
 }
 
 header a{
     color: white;
-    text-decoration: none;
-    font-weight: bolder;
+    text-decoration: none; /* para tirar o sublinhado do link */
+    font-weight: bolder; /* para ficar em negrito */
 }
 
 header a:hover{
-    text-decoration: underline;
+    text-decoration: underline; /* para aparecer o sublinhado com passar o mouse em cima do link */
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    padding-top: 10vh; /* para o padding-top pegar 10vh da altura do body */
+    padding-bottom: 10vh; /* para o padding-bottom pegar 10vh da altura do body */
+    line-height: 2em; /* espaço entre as frases  */
+    padding-left: 30px; /*  */
+    font-family: var(--fonte3);
 }
 
 section.normal{
@@ -54,7 +69,7 @@ section.imagem{
 }
 
 section.imagem > p{
-    width: 400px;
+    width: 400px; /* para ficar uma "caixinha" de 400px com cor abaixo */
     background-color: rgba(0, 0, 0, 0.184);
 
 }
@@ -73,10 +88,10 @@ footer p{
 
 footer a{
     color: white;
-    text-decoration: none;
-    font-weight: bolder;
+    text-decoration: none; /* para tirar o sublinhado do link */
+    font-weight: bolder; /* para ficar negrito */
 }
 
 footer a:hover{
-    text-decoration: underline;
+    text-decoration: underline; /* para colocar um sublinhado no link quando passar o mouse */
 }
